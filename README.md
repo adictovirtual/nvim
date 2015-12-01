@@ -26,10 +26,11 @@ And go bind your `CapsLock` key to `Esc` for goodness' sake! ([Karabiner](https:
 
 To use this configuration
 ----
-Clone the repo and symlink `.vimrc` (back up your existing first profile if you have one!):
+create your configuration folder
+Clone the repo and place it inside your config folder `.config` :
 ```sh
-git clone --recursive git://github.com/spicydonuts/.vim.git ~/.vim
-ln -s ~/.vim/.vimrc ~/.vimrc
+mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
+git clone --recursive git@github.com:adictovirtual/nvim.git $XDG_CONFIG_HOME
 ```
 
 If you're using neovim, you'll need the python plugins for python-based plugins to work:
@@ -38,12 +39,10 @@ pip2 install neovim
 pip3 install neovim
 ```
 
-Open vim and install plugins (ignore the warning about not finding lucius colors)
+Open nvim and install plugins (ignore the warning about not finding lucius colors)
 ```
-vim
-(in vim)
+nvim
 :PlugInstall
-(close vim when it's done)
 ```
 
 This includes the [YouCompleteMe](https://github.com/Valloric/YouCompleteMe) plugin, which requires an extra command to build (see their README for more info):
