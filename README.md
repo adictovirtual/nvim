@@ -30,7 +30,7 @@ create your configuration folder
 Clone the repo and place it inside your config folder `.config` :
 ```sh
 mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}
-git clone --recursive git@github.com:adictovirtual/nvim.git $XDG_CONFIG_HOME
+git clone --recursive git@github.com:adictovirtual/nvim.git $XDG_CONFIG_HOME/nvim
 ```
 
 If you're using neovim, you'll need the python plugins for python-based plugins to work:
