@@ -76,7 +76,7 @@ call plug#end()
 syntax enable
 filetype plugin indent on
 set background=dark
-colo solarized
+color solarized
 
 set omnifunc=syntaxcomplete#Complete
 set nolazyredraw
@@ -174,8 +174,7 @@ noremap <silent> <leader>q :q<CR>
 noremap <silent> <leader><S-q> :qa<CR>
 
 "Nerd tree
-noremap <silent> <leader>f     :NERDTreeFind<CR>
-noremap <silent> <leader><tab> :NERDTree<CR>
+noremap <silent> <leader>f :NERDTree<CR>
 noremap <silent> <leader>p :set invpaste paste?<CR>
 
 "vim arpeggio
