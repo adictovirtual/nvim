@@ -1,4 +1,4 @@
-call plug#begin('~/config/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
