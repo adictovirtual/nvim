@@ -21,7 +21,7 @@ Plug 'godlygeek/tabular'
 Plug 'sirver/ultisnips'
 Plug 'Shougo/vimproc.vim'
 Plug 'majutsushi/tagbar'
-
+Plug 'kana/vim-arpeggio'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 
 Plug 'pbrisbin/vim-syntax-shakespeare'
@@ -72,6 +72,7 @@ Plug 'scrooloose/nerdtree', {'on':  'NERDTreeToggle'}
 
 call plug#end()
 
+"Basics Setup
 syntax enable
 filetype plugin indent on
 set background=dark
@@ -128,7 +129,7 @@ if version >= 703 && !has("nvim")
 endif
 if has("gui_running")
   set guicursor+=a:blinkon0
-  set guifont=Source_Code_Pro:h11
+  set guifont=Source_Code_Pro:h14
 endif
 set clipboard=unnamed
 set noshowmode
@@ -162,7 +163,7 @@ au BufNewFile,BufRead rebar.config set filetype=erlang
 au BufNewFile,BufRead *.cljx set filetype=clojure
 au BufNewFile,BufRead *.pxi set filetype=clojure
 
-let mapleader = ";"
+let mapleader = "\<SPACE>"
 
 noremap <silent> <leader>n :bn<CR>
 noremap <silent> <leader>b :bp<CR>
@@ -172,8 +173,15 @@ noremap <silent> <leader>w :w<CR>
 noremap <silent> <leader>q :q<CR>
 noremap <silent> <leader><S-q> :qa<CR>
 
+"Nerd tree
+noremap <silent> <leader>f     :NERDTreeFind<CR>
 noremap <silent> <leader><tab> :NERDTree<CR>
 noremap <silent> <leader>p :set invpaste paste?<CR>
+
+"vim arpeggio
+"-------------------------
+
+call arpeggio#map('i', '', 0, 'jk', '<ESC>')
 
 if has("nvim")
   tnoremap <C-w> <C-\><C-n><C-w>
