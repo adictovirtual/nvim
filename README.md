@@ -34,6 +34,10 @@ git clone --recursive git@github.com:adictovirtual/nvim.git $XDG_CONFIG_HOME/nvi
 ```
 
 If you're using neovim, you'll need the python plugins for python-based plugins to work:
+if pip is not installed please follow the instrutions in the url  below
+
+https://pip.pypa.io/en/stable/installing/
+
 ```sh
 pip2 install neovim
 pip3 install neovim
@@ -42,6 +46,7 @@ pip3 install neovim
 Open nvim and install plugins (ignore the warning about not finding lucius colors)
 ```
 nvim
+(inside nvim)
 :PlugInstall
 ```
 
