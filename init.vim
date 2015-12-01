@@ -23,7 +23,6 @@ Plug 'Shougo/vimproc.vim'
 Plug 'majutsushi/tagbar'
 
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
-Plug 'Shougo/deoplete.nvim'
 
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
@@ -233,8 +232,6 @@ noremap <silent> <leader>fr :CtrlPMRU<CR>
 noremap <silent> <leader>ft :CtrlPBufTag<CR>
 
 
-" Deoplete:
-let g:deoplete#enable_at_startup = 1
 
 
 " Jsx:
