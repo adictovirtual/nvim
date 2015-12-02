@@ -1,13 +1,9 @@
 call plug#begin('~/.config/nvim/plugged')
-
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 " Plug 'jonathanfilip/vim-lucius'
-Plug 'altercation/vim-colors-solarized'
-Plug 'chriskempson/base16-vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe', {'do': 'sh install.py'}
-Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
@@ -23,7 +19,7 @@ Plug 'Shougo/vimproc.vim'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
-
+Plug 'mustache/vim-mustache-handlebars', {'for': ['handlebars','mustache']}
 Plug 'pbrisbin/vim-syntax-shakespeare'
 
 Plug 'vim-scripts/paredit.vim', {'for': 'clojure'}
@@ -73,11 +69,8 @@ Plug 'scrooloose/nerdtree', {'on':  'NERDTreeToggle'}
 call plug#end()
 
 "Basics Setup
-syntax enable
+syntax on
 filetype plugin indent on
-set background=dark
-color solarized
-
 set omnifunc=syntaxcomplete#Complete
 set nolazyredraw
 " set timeoutlen=50
@@ -164,12 +157,13 @@ au BufNewFile,BufRead *.cljx set filetype=clojure
 au BufNewFile,BufRead *.pxi set filetype=clojure
 
 let mapleader = "\<SPACE>"
-
+"------------- mappings -------------------
+" Moving between splits
+nmap <leader>w <C-w>w
+noremap <silent><C-s> :w<CR>
 noremap <silent> <leader>n :bn<CR>
 noremap <silent> <leader>b :bp<CR>
 noremap <silent> <leader>x :bp\|bd #<CR>
-
-noremap <silent> <leader>w :w<CR>
 noremap <silent> <leader>q :q<CR>
 noremap <silent> <leader><S-q> :qa<CR>
 
@@ -215,16 +209,24 @@ endif
 noremap <leader>sp :split<CR>
 noremap <leader>vs :vsplit<CR>
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Airline:
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 
+" Mustacle  handlebars
+let g:mustache_abbreviations = 1
+
 
 " CtrlP:
 set wildignore+=tmp,*.so,*.swp,*.zip,.git,node_modules,jspm_packages,bower_components,dist,target,out,output
 
-let g:ctrlp_map = '<leader><Space>'
+let g:ctrlp_map = '<leader><leader>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'r'
 let g:ctrlp_show_hidden = 0
