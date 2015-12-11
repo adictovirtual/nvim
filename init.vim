@@ -18,6 +18,7 @@ Plug 'sirver/ultisnips'
 Plug 'Shougo/vimproc.vim'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
+Plug 'scrooloose/nerdtree'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 Plug 'mustache/vim-mustache-handlebars', {'for': ['handlebars','mustache']}
 Plug 'pbrisbin/vim-syntax-shakespeare'
@@ -64,7 +65,6 @@ Plug 'mtscout6/vim-cjsx', {'for': 'coffee'}
 Plug 'OmniSharp/omnisharp-vim', {'for': 'cs'}
 "Plug 'OrangeT/vim-csharp', {'for': 'cs'}
 
-Plug 'scrooloose/nerdtree', {'on':  'NERDTreeToggle'}
 
 call plug#end()
 
@@ -168,7 +168,8 @@ noremap <silent> <leader>q :q<CR>
 noremap <silent> <leader><S-q> :qa<CR>
 
 "Nerd tree
-noremap <silent> <leader>f :NERDTree<CR>
+"Display the current file in the NERDTree panel
+noremap <silent> <leader>f :NERDTreeFind<CR>
 noremap <silent> <leader>p :set invpaste paste?<CR>
 
 "vim arpeggio
