@@ -4,7 +4,6 @@ Plug 'tpope/vim-surround'
 " Plug 'jonathanfilip/vim-lucius'
 Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe', {'do': 'sh install.py'}
-Plug 'kien/ctrlp.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'scrooloose/syntastic'
@@ -223,23 +222,25 @@ let g:airline_right_sep=''
 " Mustacle  handlebars
 let g:mustache_abbreviations = 1
 
+"-------------------------
+" Fugitive
 
-" CtrlP:
-set wildignore+=tmp,*.so,*.swp,*.zip,.git,node_modules,jspm_packages,bower_components,dist,target,out,output
-
-let g:ctrlp_map = '<leader><leader>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'r'
-let g:ctrlp_show_hidden = 0
-let g:ctrlp_max_height = 30
-let g:ctrlp_clear_cache_on_exit = 1
-let g:ctrlp_lazy_update = 10
-let g:ctrlp_switch_buffer = 'vh'
-
-noremap <silent> <leader>fp :CtrlPLastMode<CR>
-noremap <silent> <leader>fb :CtrlPBuffer<CR>
-noremap <silent> <leader>fr :CtrlPMRU<CR>
-noremap <silent> <leader>ft :CtrlPBufTag<CR>
+" Blame on current line
+nmap <silent> <leader>b :.Gblame<cr>
+" Blame on all selected lines in visual mode
+vmap <silent> <leader>b :Gblame<cr>
+" Git status
+nmap <silent> <leader>gst :Gstatus<cr>
+" like git add
+nmap <silent> <leader>gw :Gwrite<cr>
+" git diff
+nmap <silent> <leader>gd :Gdiff<cr>
+" git commit
+nmap <silent> <leader>gc :Gcommit<cr>
+" git commit all
+nmap <silent> <leader>gca :Gcommit -a<cr>
+" git fixup previous commit
+nmap <silent> <leader>gcf :Gcommit -a --amend<cr>
 
 " Jsx:
 let g:jsx_ext_required = 0
