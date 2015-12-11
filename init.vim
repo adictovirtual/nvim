@@ -21,7 +21,7 @@ Plug 'kana/vim-arpeggio'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 Plug 'mustache/vim-mustache-handlebars', {'for': ['handlebars','mustache']}
 Plug 'pbrisbin/vim-syntax-shakespeare'
-
+Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/paredit.vim', {'for': 'clojure'}
 Plug 'guns/vim-clojure-static', {'for': 'clojure'}
 Plug 'tpope/vim-fireplace', {'for': 'clojure'}
@@ -239,9 +239,6 @@ noremap <silent> <leader>fp :CtrlPLastMode<CR>
 noremap <silent> <leader>fb :CtrlPBuffer<CR>
 noremap <silent> <leader>fr :CtrlPMRU<CR>
 noremap <silent> <leader>ft :CtrlPBufTag<CR>
-
-
-
 
 " Jsx:
 let g:jsx_ext_required = 0
