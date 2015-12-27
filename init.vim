@@ -1,7 +1,6 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
-" Plug 'jonathanfilip/vim-lucius'
 Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe', {'do': 'sh install.py'}
 Plug 'editorconfig/editorconfig-vim'
@@ -26,45 +25,27 @@ Plug 'vim-scripts/paredit.vim', {'for': 'clojure'}
 Plug 'guns/vim-clojure-static', {'for': 'clojure'}
 Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 Plug 'tpope/vim-salve', {'for': 'clojure'}
-
 Plug 'wlangstroth/vim-racket', {'for': 'racket'}
-
 Plug 'kchmck/vim-coffee-script', {'for': 'coffeescript'}
-
 Plug 'othree/html5.vim', {'for': 'html'}
-
 Plug 'raichoo/haskell-vim', {'for': 'haskell'}
 Plug 'eagletmt/neco-ghc', {'for': 'haskell'}
 Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
 " Plug 'bitc/vim-hdevtools', {'for': 'haskell'}
 " Plug 'kana/vim-textobj-indent', {'for': 'haskell'}
-
 Plug 'raichoo/purescript-vim', {'for': 'purescript'}
-
 Plug 'lambdatoast/elm.vim', {'for': 'elm'}
-
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
-
 Plug 'junegunn/seoul256.vim', {'for': 'erlang'}
-
 Plug 'elixir-lang/vim-elixir', {'for': 'elixir'}
-
 Plug 'fatih/vim-go', {'for': 'go'}
-
 Plug 'tpope/vim-haml', {'for': 'haml'}
-
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
 Plug 'jelera/vim-javascript-syntax', {'for': 'javascript'}
 Plug 'mxw/vim-jsx', {'for': 'javascript'}
 Plug 'facebook/vim-flow', {'for': 'javascript'}
-
 Plug 'kchmck/vim-coffee-script', {'for': 'coffee'}
 Plug 'mtscout6/vim-cjsx', {'for': 'coffee'}
-
-Plug 'OmniSharp/omnisharp-vim', {'for': 'cs'}
-"Plug 'OrangeT/vim-csharp', {'for': 'cs'}
-
-
 call plug#end()
 
 "Basics Setup
