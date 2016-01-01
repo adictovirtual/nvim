@@ -31,8 +31,6 @@ Plug 'othree/html5.vim', {'for': 'html'}
 Plug 'raichoo/haskell-vim', {'for': 'haskell'}
 Plug 'eagletmt/neco-ghc', {'for': 'haskell'}
 Plug 'eagletmt/ghcmod-vim', {'for': 'haskell'}
-" Plug 'bitc/vim-hdevtools', {'for': 'haskell'}
-" Plug 'kana/vim-textobj-indent', {'for': 'haskell'}
 Plug 'raichoo/purescript-vim', {'for': 'purescript'}
 Plug 'lambdatoast/elm.vim', {'for': 'elm'}
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
