@@ -69,6 +69,7 @@ set guioptions=egc
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$
 set fillchars=
 set mouse=a mousehide " ttymouse=xterm2
+set t_Co=256
 set noequalalways
 set noerrorbells novisualbell
 set scrollopt=jump,ver,hor
@@ -127,6 +128,9 @@ function! ToggleHiddenAll()
 endfunction
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
 "autocmd BufNewFile,BufRead * :call ToggleHiddenAll()
+let g:solarized_termcolors=256
+set background=dark
+colorscheme solarized
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 
