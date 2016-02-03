@@ -14,11 +14,12 @@ Plug 'tpope/vim-rhubarb'
 Plug 'godlygeek/tabular'
 Plug 'sirver/ultisnips'
 Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/unite.vim'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
-Plug 'mustache/vim-mustache-handlebars', {'for': ['handlebars','mustache']}
+Plug 'mustache/vim-mustache-handlebars', {'for': 'handlebars'}
 Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/paredit.vim', {'for': 'clojure'}
