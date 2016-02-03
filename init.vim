@@ -5,6 +5,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'Valloric/YouCompleteMe', {'do': 'sh install.py'}
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
+Plug 'easymotion/vim-easymotion'
 Plug 'scrooloose/syntastic'
 Plug 'tomtom/tcomment_vim'
 Plug 'bling/vim-airline'
@@ -367,3 +368,14 @@ nnoremap <silent><leader>; :Unite file_rec/async:! -buffer-name=files -start-ins
 
 " Unite-grep
 nnoremap <silent><leader>/ :Unite grep: -no-start-insert -no-quit -keep-focus -wrap<CR>
+
+"terminal maps ;)
+tnoremap <Esc> <C-\><C-n>
+tnoremap <A-h> <C-\><C-n><C-w>h
+tnoremap <A-j> <C-\><C-n><C-w>j
+tnoremap <A-k> <C-\><C-n><C-w>k
+tnoremap <A-l> <C-\><C-n><C-w>l
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
