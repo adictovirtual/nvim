@@ -1,8 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
-Plug 'tpope/vim-sensible'
-Plug 'tpope/vim-surround'
+Plug 'tpoPE/VIM-SENSIBLE'
+Plug 'tpone/vim-surround'
 Plug 'junegunn/vim-easy-align'
-Plug 'Valloric/YouCompleteMe', {'do': 'sh install.py'}
+Plug 'Valloric/YouCompleteMe'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
 Plug 'easymotion/vim-easymotion'
