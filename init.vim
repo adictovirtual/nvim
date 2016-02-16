@@ -22,7 +22,7 @@ Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
 Plug 'scrooloose/nerdtree'
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
-Plug 'mustache/vim-mustache-handlebars', {'for': 'handlebars'}
+Plug 'mustache/vim-mustache-handlebars', {'for': 'html.handlebars'}
 Plug 'pbrisbin/vim-syntax-shakespeare'
 Plug 'Valloric/MatchTagAlways'
 Plug 'vim-scripts/paredit.vim', {'for': 'clojure'}
