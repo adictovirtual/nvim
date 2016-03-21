@@ -93,6 +93,7 @@ set encoding=utf-8
 set fileformats=unix,dos
 set nobackup nowritebackup noswapfile
 set autoindent
+set smartindent
 set backspace=indent,eol,start
 set formatoptions=tcrqn
 set nowrap nojoinspaces
