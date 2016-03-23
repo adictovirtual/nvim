@@ -9,7 +9,7 @@ Goodies
 ----
 * `:term` opens a real terminal in Neovim! (not taking credit, just making sure you know)
 * `<C-w>` will get you out of terminal mode and ready to move to another pane (`h`, `j`, `k`, `l`)
-* `<leader>` is bound to `;`.
+* `<leader>` is bound to `<space>`.
 * `;n` and `;b` to jump to next/previous buffers.
 * `;w` for a quick save.
 * `;x` closes a the current buffer, but not the window or pane it's in.
@@ -61,14 +61,12 @@ brew install editorconfig
 
 Fonts
 ----
-install the following fonts to get Fonts and icons working well  [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#usage) .
+install the following fonts to get Fonts and icons working well  [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#usage) if you are using neo vim from the terminal please change the font style in the console settings, not init.vim config needed
 
 
 Colors
 ----
-Old version: Includes [Lucius](https://github.com/spicydonuts/lucius), if you'd like to use it for your terminal as well.  My fork just adds OS X Terminal profiles (iTerm2 is very laggy in my experience).
-I now use Solarized Dark by default, though both colorschemes are good.
-
+I use Solarized Color Scheme [solarized](https://github.com/altercation/vim-colors-solarized) if you are running neovim from the terminal please install solarized terminal color profile to get real color in your neovim [solarized terminal](https://github.com/tomislav/osx-terminal.app-colors-solarized)
 
 Thanks
 ----

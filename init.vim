@@ -21,7 +21,7 @@ Plug 'Shougo/neoyank.vim'
 Plug 'Shougo/neomru.vim'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
-Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
+Plug 'scrooloose/nerdtree'  | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 Plug 'mustache/vim-mustache-handlebars', {'for': 'html.handlebars'}
 Plug 'pbrisbin/vim-syntax-shakespeare'
@@ -56,6 +56,10 @@ syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 set nolazyredraw
+"theme config
+colorscheme solarized
+set background=dark
+"let g:solarized_termcolors=256
 " set timeoutlen=50
 set number
 set scrolloff=7
@@ -72,7 +76,6 @@ set guioptions=egc
 set listchars=tab:\|\ ,trail:.,extends:>,precedes:<,eol:$
 set fillchars=
 set mouse=a mousehide " ttymouse=xterm2
-set t_Co=256
 set noequalalways
 set noerrorbells novisualbell
 set scrollopt=jump,ver,hor
@@ -105,10 +108,10 @@ set whichwrap+=<,>,h,l
 if version >= 703 && !has("nvim")
   set cryptmethod=blowfish
 endif
-if has("gui_running")
-  set guicursor+=a:blinkon0
-  set guifont=Source_Code_Pro:h14
-endif
+
+set guicursor+=a:blinkon0
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+let g:airline_powerline_fonts=1
 set clipboard=unnamed
 set noshowmode
 set ruler
@@ -132,9 +135,6 @@ function! ToggleHiddenAll()
 endfunction
 nnoremap <S-h> :call ToggleHiddenAll()<CR>
 "autocmd BufNewFile,BufRead * :call ToggleHiddenAll()
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
 
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 
