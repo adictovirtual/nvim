@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 Plug 'tpoPE/VIM-SENSIBLE'
-Plug 'tpone/vim-surround'
 Plug 'junegunn/vim-easy-align'
+Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mattn/emmet-vim'
@@ -21,7 +21,7 @@ Plug 'Shougo/neoyank.vim'
 Plug 'Shougo/neomru.vim'
 Plug 'majutsushi/tagbar'
 Plug 'kana/vim-arpeggio'
-Plug 'scrooloose/nerdtree'
+Plug 'scrooloose/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind'] } | Plug 'Xuyuanp/nerdtree-git-plugin' | Plug 'ryanoasis/vim-devicons' " file drawer
 Plug 'Shougo/vimproc.vim', {'do': 'make -f make_mac.mak'}
 Plug 'mustache/vim-mustache-handlebars', {'for': 'html.handlebars'}
 Plug 'pbrisbin/vim-syntax-shakespeare'
