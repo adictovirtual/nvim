@@ -61,7 +61,7 @@ brew install editorconfig
 
 Fonts
 ----
-This `.vimrc` uses the excellent [Source Code Pro](http://adobe-fonts.github.io/source-code-pro/) (when in a gui like `macvim` or `gvim`).
+install the following fonts to get Fonts and icons working well  [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts#usage) .
 
 
 Colors
