@@ -57,10 +57,10 @@ filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
 set nolazyredraw
 "theme config
-colorscheme solarized
+let g:solarized_termcolors=256
 set background=dark
-"let g:solarized_termcolors=256
-" set timeoutlen=50
+colorscheme solarized
+"set timeoutlen=50
 set number
 set scrolloff=7
 set shortmess=flmnrxIstToO
