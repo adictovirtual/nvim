@@ -58,7 +58,7 @@ set omnifunc=syntaxcomplete#Complete
 set nolazyredraw
 "theme config
 let g:solarized_termcolors=256
-set background=dark
+"set background=dark
 colorscheme solarized
 "set timeoutlen=50
 set number
